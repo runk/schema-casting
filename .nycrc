@@ -1,0 +1,26 @@
+{
+  "check-coverage": true,
+  "per-file": false,
+  "lines": 99,
+  "statements": 99,
+  "functions": 99,
+  "branches": 99,
+  "include": [
+    "lib/**/*.js"
+  ],
+  "exclude": [
+  ],
+  "reporter": [
+    "lcov",
+    "text-summary"
+  ],
+  "cache": true,
+  "all": true,
+  "report-dir": "./coverage",
+  "watermarks": {
+    "lines": [95, 99],
+    "functions": [95, 99],
+    "branches": [95, 99],
+    "statements": [95, 99]
+  }
+}

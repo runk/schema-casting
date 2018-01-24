@@ -1,0 +1,46 @@
+{
+  "name": "schema-casting",
+  "version": "1.0.0",
+  "homepage": "https://github.com/runk/schema-casting",
+  "description": "JSON Schema type casting and normalization",
+  "keywords": [
+    "json schema",
+    "json-schema",
+    "schema",
+    "normalizer",
+    "normalization"
+  ],
+  "author": "Dmitry Shirokov <deadrunk@gmail.com>",
+  "contributors": [],
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "nyc": "^11.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "github-publish-release": "^4.0.0",
+    "mocha": "^3.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runk/schema-casting.git"
+  },
+  "bugs": {
+    "mail": "deadrunk@gmail.com",
+    "url": "http://github.com/runk/schema-casting/issues"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1"
+  },
+  "license": "MIT",
+  "scripts": {
+    "coverage": "istanbul cover _mocha -- -R spec --timeout 5000 --recursive",
+    "coverage:check": "istanbul check-coverage",
+    "lint": "eslint -c .eslintrc .",
+    "release": "scripts/release",
+    "mocha": "mocha -R spec --recursive --bail",
+    "test": "./scripts/test"
+  }
+}
