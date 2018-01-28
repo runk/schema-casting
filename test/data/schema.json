@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "a": { "required": true, "type": "integer" },
+    "b": { "required": true, "type": "boolean" },
+    "c": { "required": true, "type": "number" },
+    "d": {
+      "required": true,
+      "type": "object",
+      "properties": {
+        "e": {
+          "required": true,
+          "type": "object",
+          "properties": {
+            "f": { "required": true, "type": "number" }
+          }
+        }
+      }
+    }
+  },
+  "required": true,
+  "additionalProperties": false
+}

@@ -13,13 +13,15 @@
   "author": "Dmitry Shirokov <deadrunk@gmail.com>",
   "contributors": [],
   "dependencies": {
-    "lodash": "^4.17.4",
-    "nyc": "^11.4.1"
+    "babel-eslint": "^8.2.1",
+    "jsonschema": "^1.2.2",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "eslint": "^2.13.1",
+    "eslint": "^4.16.0",
     "github-publish-release": "^4.0.0",
-    "mocha": "^3.4.1"
+    "mocha": "^3.4.1",
+    "nyc": "^11.4.1"
   },
   "repository": {
     "type": "git",
@@ -31,14 +33,14 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=0.8.0",
+    "node": ">=4.4",
     "npm": ">=1"
   },
   "license": "MIT",
   "scripts": {
     "coverage": "istanbul cover _mocha -- -R spec --timeout 5000 --recursive",
     "coverage:check": "istanbul check-coverage",
-    "lint": "eslint -c .eslintrc .",
+    "lint": "./scripts/lint",
     "release": "scripts/release",
     "mocha": "mocha -R spec --recursive --bail",
     "test": "./scripts/test"

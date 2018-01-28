@@ -12,7 +12,6 @@ $RUNNER \
   --check-leaks \
   --bail \
   --grep ${npm_config_grep:-''} \
-  --require test/globals.js \
   --globals test \
   --recursive \
   --timeout 60s \
