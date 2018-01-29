@@ -31,7 +31,7 @@
     "mail": "deadrunk@gmail.com",
     "url": "http://github.com/runk/schema-casting/issues"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "engines": {
     "node": ">=4.4",
     "npm": ">=1"
