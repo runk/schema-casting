@@ -13,11 +13,11 @@
   "author": "Dmitry Shirokov <deadrunk@gmail.com>",
   "contributors": [],
   "dependencies": {
-    "babel-eslint": "^8.2.1",
     "jsonschema": "^1.2.2",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.1",
     "eslint": "^4.16.0",
     "github-publish-release": "^4.2.0",
     "mocha": "^3.4.1",
