@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "eslint": "^4.16.0",
-    "github-publish-release": "^4.0.0",
+    "github-publish-release": "^4.2.0",
     "mocha": "^3.4.1",
     "nyc": "^11.4.1"
   },
