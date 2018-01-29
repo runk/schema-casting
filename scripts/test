@@ -17,4 +17,4 @@ $RUNNER \
   --timeout 60s \
   --inline-diffs \
   $WATCH \
-  test ${npm_config_file:-'lib/**/*.test.js'}
+  ${npm_config_file:-'test'}
