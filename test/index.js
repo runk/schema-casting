@@ -30,6 +30,15 @@ describe('schema-casting', function() {
     });
   });
 
+  it('should type cast constant string literals to appropriate types', () => {
+    const constantSchema = {
+      type: 'integer'
+    };
+    const output = sc(constantSchema, '11');
+
+    assert.deepStrictEqual(output, 11);
+  });
+
   it('should ignore string literals if casting unfeasible', () => {
     const output = sc(schema, {
       'a': 'hello',
