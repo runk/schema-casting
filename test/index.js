@@ -8,8 +8,8 @@ describe("schema-casting", function() {
   it("should type cast string literals to appropriate types", () => {
     const output = sc(schema, {
       a: "1",
-			b: "true",
-			b0: "1",
+      b: "true",
+      b0: "1",
       c: "2.34",
       d: {
         e: {
@@ -20,8 +20,8 @@ describe("schema-casting", function() {
 
     assert.deepEqual(output, {
       a: 1,
-			b: true,
-			b0: true,
+      b: true,
+      b0: true,
       c: 2.34,
       d: {
         e: {
