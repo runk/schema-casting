@@ -9,7 +9,6 @@ describe("schema-casting", function() {
     const output = sc(schema, {
       a: "1",
       b: "true",
-      b0: "1",
       c: "2.34",
       d: {
         e: {
@@ -21,7 +20,6 @@ describe("schema-casting", function() {
     assert.deepEqual(output, {
       a: 1,
       b: true,
-      b0: true,
       c: 2.34,
       d: {
         e: {
@@ -59,7 +57,19 @@ describe("schema-casting", function() {
     const constantSchema = {
       type: "integer"
     };
-    const output = sc(constantSchema, "11");
-    assert.deepEqual(output, 11);
+    const output = sc(constantSchema, "123");
+    assert.deepEqual(output, 123);
+  });
+
+  describe("type: boolean", () => {
+    const helper = (arg, expected) => {
+      const output = sc(schema, { b: arg });
+      assert.deepEqual(output, { b: expected });
+    };
+
+    it("true string", () => helper("true", true));
+    it("false string", () => helper("false", false));
+    it("generic string", () => helper("hello", false));
+    it("number '1'", () => helper("1", true));
   });
 });
